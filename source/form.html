@@ -25,7 +25,55 @@
     <main class="page-main">
       <h1 class="page-header">Оставьте свой отзыв</h1>
       <p class="header-caption">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      <!-- Форма отзыва -->
+      <form class="review" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="review__item">
+          <legend class="review__title">Представьтесь:</legend>
+          <label class="review__label" for="first-name">Имя*</label>
+          <input class="review__text" id="first-name" type="text" name="first-name" placeholder="Петр">
+          <label class="review__label" for="last-name">Фамилия*</label>
+          <input class="review__text" id="last-name" type="text" name="last-name" placeholder="Иванов">
+          <label class="review__label" for="patronymic">Отчество</label>
+          <input class="review__text" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+        </fieldset>
+
+        <fieldset class="review__item">
+          <legend class="review__title">Контактная информация:</legend>
+          <label class="review__label" for="phone">Контактный телефон*</label>
+          <input class="review__text" id="phone" type="text" name="phone" placeholder="Введите телефон">
+          <label class="review__label" for="email">Электронная почта*</label>
+          <input class="review__text" id="email" type="text" name="email" placeholder="Введите e-mail">
+        </fieldset>
+
+        <fieldset class="review__item">
+          <legend class="review__title">Ваше общее впечатление:</legend>
+          <label class="review__label" for="impression-positive">Скорее положительное</label>
+          <input class="review__radio" id="impression-positive" type="radio" name="impression" value="positive" checked>
+          <label class="review__label" for="impression-negative">Скорее отрицательное</label>
+          <input class="review__radio" id="impression-negative" type="radio" name="impression" value="negative">
+          <label class="review__label" for="impression-neutral">Затрудняюсь ответить</label>
+          <input class="review__radio" id="impression-neutral" type="radio" name="impression" value="neutral">
+        </fieldset>
+
+        <fieldset class="review__item">
+          <legend class="review__title">Посещенные достопримечательности:</legend>
+          <label class="review__label" for="devils-bridge">Мост Дьявола</label>
+          <input class="review__checkbox" id="devils-bridge" type="checkbox" name="sight-devils-bridge" checked>
+          <label class="review__label" for="bell-rock">Гора-Колокол</label>
+          <input class="review__checkbox" id="bell-rock" type="checkbox" name="sight-bell-rock" checked>
+          <label class="review__label" for="slide-park">Слайд-парк</label>
+          <input class="review__checkbox" id="slide-park" type="checkbox" name="sight-slide-park" checked>
+          <label class="review__label" for="red-rock">Красные горы</label>
+          <input class="review__checkbox" id="red-rock" type="checkbox" name="sight-red-rock">
+        </fieldset>
+
+        <fieldset class="review__item">
+          <legend class="review__title">Опишите свои эмоции:</legend>
+          <label class="review__label" for="emotions">Впечатления от поездки</label>
+          <textarea class="review__textarea" name="emotions" id="emotions" rows="5" cols="80" placeholder="Опишите подробно свои эмоции"></textarea>
+        </fieldset>
+
+        <input class="review__submit button" type="submit" value="Отправить отзыв">
+      </form>
     </main>
 
     <footer class="page-footer">
