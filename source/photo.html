@@ -11,13 +11,20 @@
         <img class="page-header__logo-image" src="http://placehold.it/102x83" alt="Лого Седоны">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__open">Открыть меню</button>
-        <button class="main-nav__close">Закрыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Главная</a></li>
-          <li class="site-list__item site-list__item--active"><a href="#">Фото и видео</a></li>
-          <li class="site-list__item"><a href="#">Форма отзыва</a></li>
-          <li class="site-list__item"><a href="#">Html academy</a></li>
+        <button class="main-nav__open" type="button">Открыть меню</button>
+        <ul class="main-nav__list main-nav-list">
+          <li class="main-nav-list__item">
+            <a class="main-nav-list__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav-list__item main-nav-list__item--active">
+            <a class="main-nav-list__link">Фото и видео</a>
+          </li>
+          <li class="main-nav-list__item">
+            <a class="main-nav-list__link" href="#">Форма отзыва</a>
+          </li>
+          <li class="main-nav-list__item">
+            <a class="main-nav-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -84,7 +91,27 @@
       </section>
       <section class="video">
         <h2 class="video__header">Видеопрезентация Седоны</h2>
-        <!-- видеопрезентация -->
+        <div class="video__wrapper">
+          <img class="video__content" src="http://placehold.it/320x200" alt="Видео">
+          <div class="video__controls">
+            <div class="video__progress-bar-wrapper">
+              <div class="video__progress-bar">
+                <div class="video__progress-toggle"></div>
+              </div>
+              <div class="video__buttons__wrapper">
+                <button class="video__reload">
+                  <span class="visually-hidden">Перезагрузить</span>
+                </button>
+                <button class="video__closed-captions">
+                  <span class="visually-hidden">Показать субтитры</span>
+                </button>
+                <button class="video__fullscreen">
+                  <span class="visually-hidden">Развернуть во весь экран</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -105,7 +132,7 @@
       </ul>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a href="#" class="copyright__link">Html Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
 
