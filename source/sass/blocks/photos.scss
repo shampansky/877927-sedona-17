@@ -1,0 +1,41 @@
+.photos__list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.photos__item {
+  padding-top: 22px;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.photos__image {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.photos__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: bold;
+  color: #000000;
+}
+
+.photos__author {
+  margin: 0;
+  margin-bottom: 15px;
+
+  text-transform: none;
+}
+
+.photos__likes {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.photos__likes-number {
+  font-weight: bold;
+  color: #000000;
+}
