@@ -1,7 +1,5 @@
 .social {
-  padding: 0;
-
-  list-style: none;
+  @include no-list;
 }
 
 .social__link {
