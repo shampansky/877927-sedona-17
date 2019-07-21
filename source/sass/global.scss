@@ -32,6 +32,12 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 .button {
   display: block;
   padding: 20px;
