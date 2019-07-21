@@ -37,27 +37,12 @@
 
   border: none;
   background-color: #f2f2f2;
-}
 
-.review__field::placeholder {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-  text-transform: none;
-}
-
-.review__textarea {
-  padding: 20px;
-
-  border: none;
-  background-color: #f2f2f2;
-}
-
-.review__textarea::placeholder {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-  text-transform: none;
+  &::placeholder {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: none;
+  }
 }
