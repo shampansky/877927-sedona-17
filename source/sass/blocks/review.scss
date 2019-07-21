@@ -23,13 +23,13 @@
 .review__label {
   font-size: 14px;
   line-height: 26px;
-}
 
-.review__label--bold {
-  font-weight: bold;
-  font-size: 18px;
-  color: #000000;
-  text-transform: none;
+  &--bold {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    text-transform: none;
+  }
 }
 
 .review__field {

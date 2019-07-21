@@ -5,40 +5,23 @@
 .advantages__item {
   color: #ffffff;
   background-color: #81b3d2;
-}
 
-.advantages-item--city {
-  padding-top: 60px;
-}
+  &--city {
+    padding-top: 60px;
+  }
 
-.advantages__wrapper--city {
-  padding-bottom: 300px;
+  &--small {
+    padding: 30px 0;
 
-  background-image: url("../img/main-city-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom center;
-}
+    color: #333333;
 
-.advantages-item--bridge {
-  padding-top: 45px;
-  padding-bottom: 300px;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #d7d7d7;
+  }
 
-  background-image: url("../img/main-bridge-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom center;
-}
-
-.advantages__item--small {
-  padding: 30px 0;
-
-  color: #333333;
-
-  background-color: #eeeeee;
-  border-bottom: 1px solid #d7d7d7;
-}
-
-.advantages__item--small:last-child {
-  border-bottom: none;
+  &--small:last-child {
+    border-bottom: none;
+  }
 }
 
 .advantages__header {
@@ -61,4 +44,8 @@
 
   font-size: 14px;
   line-height: 21px;
+}
+
+.advantages__image {
+  display: block;
 }
