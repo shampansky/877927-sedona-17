@@ -1,0 +1,52 @@
+.review__item {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.review__title {
+  padding: 0;
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}
+
+.review__field-group {
+  margin-bottom: 20px;
+}
+
+.review__label {
+  font-size: 14px;
+  line-height: 26px;
+
+  &--bold {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    text-transform: none;
+  }
+}
+
+.review__field {
+  height: 58px;
+
+  border: none;
+  background-color: #f2f2f2;
+
+  &--textarea {
+    height: 160px;
+  }
+
+  &::placeholder {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: none;
+  }
+}

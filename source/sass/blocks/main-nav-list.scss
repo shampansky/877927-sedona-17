@@ -1,0 +1,20 @@
+.main-nav-list {
+  @include no-list;
+  background-color: #81b3d2;
+}
+
+.main-nav-list__item {
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+}
+
+.main-nav-list__link {
+  display: block;
+  padding: 7px 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+  text-decoration: none;
+}
