@@ -34,7 +34,7 @@
         <h1 class="page-main__page-header">Оставьте свой отзыв</h1>
         <p class="page-main__header-caption">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="review" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="review__item">
+          <fieldset class="review__item review__item--name">
             <legend class="review__title">Представьтесь:</legend>
             <div class="review__field-group">
               <label class="review__label" for="first-name">Имя*</label>
@@ -50,19 +50,21 @@
             </div>
           </fieldset>
 
-          <fieldset class="review__item">
+          <fieldset class="review__item review__item--contact">
             <legend class="review__title">Контактная информация:</legend>
-            <div class="review__field-group">
-              <label class="review__label" for="phone">Контактный телефон*</label>
-              <input class="review__field" id="phone" type="tel" name="phone" placeholder="Введите телефон">
-            </div>
-            <div class="review__field-group">
-              <label class="review__label" for="email">Электронная почта*</label>
-              <input class="review__field" id="email" type="email" name="email" placeholder="Введите e-mail">
+            <div class="review__fields-wrapper review__fields-wrapper--contact">
+              <div class="review__field-group">
+                <label class="review__label review__label--contact" for="phone">Контактный телефон*</label>
+                <input class="review__field" id="phone" type="tel" name="phone" placeholder="Введите телефон">
+              </div>
+              <div class="review__field-group">
+                <label class="review__label review__label--contact" for="email">Электронная почта*</label>
+                <input class="review__field" id="email" type="email" name="email" placeholder="Введите e-mail">
+              </div>
             </div>
           </fieldset>
 
-          <fieldset class="review__item">
+          <fieldset class="review__item review__item--impression">
             <legend class="review__title">Ваше общее впечатление:</legend>
             <div class="review__field-group">
               <label class="review__label review__label--bold" for="impression-positive">Скорее положительное</label>
@@ -78,35 +80,40 @@
             </div>
           </fieldset>
 
-          <fieldset class="review__item">
+          <fieldset class="review__item review__item--sights">
             <legend class="review__title">Посещенные достопримечательности:</legend>
-            <div class="review__field-group">
-              <label class="review__label review__label--bold" for="devils-bridge">Мост Дьявола</label>
-              <input class="review__checkbox" id="devils-bridge" type="checkbox" name="sight-devils-bridge" checked>
-            </div>
-            <div class="review__field-group">
-              <label class="review__label review__label--bold" for="bell-rock">Гора-Колокол</label>
-              <input class="review__checkbox" id="bell-rock" type="checkbox" name="sight-bell-rock" checked>
-            </div>
-            <div class="review__field-group">
-              <label class="review__label review__label--bold" for="slide-park">Слайд-парк</label>
-              <input class="review__checkbox" id="slide-park" type="checkbox" name="sight-slide-park" checked>
-            </div>
-            <div class="review__field-group">
-              <label class="review__label review__label--bold" for="red-rock">Красные горы</label>
-              <input class="review__checkbox" id="red-rock" type="checkbox" name="sight-red-rock">
+            <div class="review__fields-wrapper">
+              <div class="review__field-group review__field-group--sights">
+                <label class="review__label review__label--bold" for="devils-bridge">Мост Дьявола</label>
+                <input class="review__checkbox" id="devils-bridge" type="checkbox" name="sight-devils-bridge" checked>
+              </div>
+              <div class="review__field-group review__field-group--sights">
+                <label class="review__label review__label--bold" for="bell-rock">Гора-Колокол</label>
+                <input class="review__checkbox" id="bell-rock" type="checkbox" name="sight-bell-rock" checked>
+              </div>
+              <div class="review__field-group review__field-group--sights">
+                <label class="review__label review__label--bold" for="slide-park">Слайд-парк</label>
+                <input class="review__checkbox" id="slide-park" type="checkbox" name="sight-slide-park" checked>
+              </div>
+              <div class="review__field-group review__field-group--sights">
+                <label class="review__label review__label--bold" for="red-rock">Красные горы</label>
+                <input class="review__checkbox" id="red-rock" type="checkbox" name="sight-red-rock">
+              </div>
             </div>
           </fieldset>
 
-          <fieldset class="review__item">
+          <fieldset class="review__item review__item--emotions">
             <legend class="review__title">Опишите свои эмоции:</legend>
             <div class="review__field-group">
               <label class="visually-hidden" for="emotions">Впечатления от поездки</label>
               <textarea class="review__field review__field--textarea" name="emotions" id="emotions" rows="5" cols="80" placeholder="Опишите подробно свои эмоции"></textarea>
             </div>
           </fieldset>
+          <div class="review__submit-wrapper">
+            <input class="review__submit button" type="submit" value="Отправить отзыв">
+            <p class="review__submit-caption">* - обязательные поля</p>
+          </div>
 
-          <input class="review__submit button" type="submit" value="Отправить отзыв">
         </form>
       </main>
 

@@ -1,6 +1,5 @@
 .page-footer {
-  padding-top: 35px;
-  padding-bottom: 20px;
+  padding: 35px $mobile-padding 20px;
 }
 
 .page-footer__hashtag {
@@ -15,5 +14,14 @@
   .page-footer {
     display: flex;
     justify-content: space-between;
+    padding: 35px $tablet-padding 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px $desktop-padding 20px;
   }
 }

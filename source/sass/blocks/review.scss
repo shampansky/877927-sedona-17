@@ -30,6 +30,10 @@
     color: #000000;
     text-transform: none;
   }
+
+  &--contact {
+    display: block;
+  }
 }
 
 .review__field {
@@ -48,5 +52,81 @@
     line-height: 26px;
     color: #000000;
     text-transform: none;
+  }
+}
+
+.review__submit-caption {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+  .review__item {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    &--impression {
+      width: 50%;
+      order: -1;
+    }
+
+    &--name {
+      width: 50%;
+    }
+  }
+
+  .review__fields-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--contact {
+      flex-direction: column;
+    }
+  }
+
+  .review__field-group {
+    &--sights {
+      width: 50%;
+    }
+  }
+
+  .review__submit-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .review__submit-caption {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__label {
+    &--contact {
+      display: inline;
+    }
+  }
+
+  .review__field-group {
+    &--sights {
+      width: 25%;
+    }
+  }
+
+  .review__fields-wrapper {
+    &--contact {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }
