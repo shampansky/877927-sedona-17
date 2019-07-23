@@ -49,3 +49,26 @@
 .advantages__image {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+  }
+
+  .advantages__item--bridge {
+    display: flex;
+  }
+
+  .advantages__item {
+    width: 100%;
+  }
+
+  .advantages__item--small {
+    width: 33%;
+  }
+}

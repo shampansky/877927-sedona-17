@@ -1,6 +1,7 @@
 .main-nav-list {
   @include no-list;
   background-color: #81b3d2;
+  display: none;
 }
 
 .main-nav-list__item {
@@ -17,4 +18,10 @@
   line-height: 40px;
   color: #ffffff;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav-list {
+    display: flex;
+  }
 }

@@ -37,3 +37,35 @@
   font-weight: bold;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photos__item {
+    width: 50%;
+  }
+
+  .photos__item--first {
+    width: 100%;
+  }
+
+  .photos__caption {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__item {
+    position: relative;
+  }
+
+  .photos__caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}

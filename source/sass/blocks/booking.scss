@@ -21,3 +21,11 @@
   display: block;
   margin-bottom: 50px;
 }
+
+@media (min-width: $tablet-width) {
+  .booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
