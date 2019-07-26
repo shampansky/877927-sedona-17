@@ -4,6 +4,10 @@
 
   list-style: none;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .features__header {
@@ -23,10 +27,4 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-}
-
-@media (min-width: $tablet-width) {
-  .features {
-    display: flex;
-  }
 }

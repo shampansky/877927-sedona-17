@@ -7,13 +7,11 @@
   background-position: bottom center, bottom 180px center, bottom center;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: auto, 282px, auto;
-}
 
-.page-header--main-page {
-  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom center, bottom 100px center, bottom center;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: auto, 282px, auto;
+  &--main-page {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: bottom center, bottom 100px center, bottom center;
+  }
 }
 
 .page-header__logo {

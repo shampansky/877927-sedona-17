@@ -1,5 +1,11 @@
 .booking {
   padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .booking__title {
@@ -20,12 +26,4 @@
 .booking__link {
   display: block;
   margin-bottom: 50px;
-}
-
-@media (min-width: $tablet-width) {
-  .booking {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }

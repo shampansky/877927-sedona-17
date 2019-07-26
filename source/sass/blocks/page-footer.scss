@@ -1,5 +1,11 @@
-.page-footer {
-  padding: 35px $mobile-padding 20px;
+.page-footer__container {
+  padding-top: 35px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__hashtag {
@@ -8,20 +14,4 @@
 
 .pagefooter__social {
   margin-bottom: 35px;
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 35px $tablet-padding 20px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 35px $desktop-padding 20px;
-  }
 }

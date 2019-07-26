@@ -1,16 +1,48 @@
 .photos__list {
   @include no-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .photos__item {
   padding-top: 22px;
 
   border-top: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
 }
 
 .photos__image {
   display: block;
   margin-bottom: 20px;
+}
+
+.photos__caption {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 .photos__title {
@@ -36,36 +68,4 @@
 .photos__likes-number {
   font-weight: bold;
   color: #000000;
-}
-
-@media (min-width: $tablet-width) {
-  .photos__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .photos__item {
-    width: 50%;
-  }
-
-  .photos__item--first {
-    width: 100%;
-  }
-
-  .photos__caption {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .photos__item {
-    position: relative;
-  }
-
-  .photos__caption {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
 }
