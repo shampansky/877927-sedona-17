@@ -4,6 +4,10 @@
 
   list-style: none;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .features__header {

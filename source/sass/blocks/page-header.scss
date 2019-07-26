@@ -1,15 +1,30 @@
-.page-main__page-header {
-  margin: 0;
-  margin-bottom: 30px;
+.page-header {
+  position: relative;
 
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #000000;
+  height: 470px;
+
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom center, bottom 180px center, bottom center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, 282px, auto;
+
+  &--main-page {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: bottom center, bottom 100px center, bottom center;
+  }
 }
 
-.page-main__header-caption {
-  margin-bottom: 30px;
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 
-  line-height: 26px;
+  display: block;
+  width: 102px;
+  margin: 0 auto;
+}
+
+.page-header__logo-image {
+  display: block;
 }

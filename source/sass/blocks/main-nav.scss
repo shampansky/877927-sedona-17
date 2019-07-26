@@ -1,0 +1,9 @@
+.main-nav__menu-btn {
+  position: absolute;
+  right: 0;
+  top: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

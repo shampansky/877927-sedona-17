@@ -1,6 +1,11 @@
 .main-nav-list {
   @include no-list;
   background-color: #81b3d2;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav-list__item {
