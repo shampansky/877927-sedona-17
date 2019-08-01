@@ -1,13 +1,38 @@
 .social {
   @include no-list;
 
+  margin-bottom: 37px;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .social__link {
+  width: 46px;
+  height: 48px;
   display: block;
+  margin: 0 3px;
 
   color: #ffffff;
 
   background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--twitter {
+  background-image: url("../img/icon-twitter.svg");
+  background-size: 18px;
+}
+
+.social__link--facebook {
+  background-image: url("../img/icon-facebook.svg");
+  background-size: 9px;
+}
+
+.social__link--youtube {
+  background-image: url("../img/icon-youtube.svg");
+  background-size: 20px;
 }

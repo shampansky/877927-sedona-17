@@ -1,6 +1,7 @@
 .button {
   display: block;
-  padding: 20px;
+  padding: 16px;
+  width: 280px;
 
   font-size: 21px;
   line-height: 26px;
@@ -12,4 +13,8 @@
 
   background-color: #81b3d2;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }

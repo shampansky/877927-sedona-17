@@ -1,16 +1,30 @@
 .page-header {
   position: relative;
 
-  height: 470px;
+  height: 445px;
 
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom center, bottom 180px center, bottom center;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: auto, 282px, auto;
+  background-size: 104%, 282px, auto;
 
   &--main-page {
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: bottom center, bottom 100px center, bottom center;
+    background-position: bottom center, bottom 85px center, bottom center;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 574px;
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: bottom center, top 100px center, bottom center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100%, 460px, auto;
+
+    &--main-page {
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@1x.jpg");
+      background-position: bottom center, top 133px center, bottom center;
+    }
   }
 }
 

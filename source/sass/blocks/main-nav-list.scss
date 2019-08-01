@@ -5,12 +5,21 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    background-color: #ffffff;
   }
 }
 
 .main-nav-list__item {
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+  }
 }
 
 .main-nav-list__link {
@@ -22,4 +31,14 @@
   line-height: 40px;
   color: #ffffff;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+    padding: 15px 0;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    text-align: center;
+  }
 }

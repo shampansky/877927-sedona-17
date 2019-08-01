@@ -1,4 +1,18 @@
+.copyright {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
+}
+
 .copyright__text {
+  margin-right: 10px;
+
   font-weight: normal;
   color: #000000;
+}
+
+.copyright__link svg {
+  width: 40px;
 }
