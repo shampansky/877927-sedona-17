@@ -1,3 +1,13 @@
+.photos {
+  @media (min-width: $tablet-width) {
+    padding: 19px $tablet-padding 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 0 0;
+  }
+}
+
 .photos__list {
   @include no-list;
 
@@ -8,32 +18,71 @@
 }
 
 .photos__item {
-  padding-top: 22px;
+  padding: 0 $mobile-padding 17px;
 
   border-top: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: 50%;
+
+    border: none;
 
     &--first {
       width: 100%;
+
+      .photos__image {
+        width: 648px; // временные стили
+        height: 400px; // временные стили
+      }
+    }
+
+    img {
+      width: 324px; // временные стили
+      height: 267px; // временные стили
     }
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+
+    width: 33%;
+    flex-grow: 1;
+
+    &--first {
+      width: 100%;
+    }
   }
 }
 
 .photos__image {
   display: block;
-  margin-bottom: 20px;
+  width: 280px;
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+
+
+    padding-top: 0;
+  }
 }
 
 .photos__caption {
+  padding-top: 15px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 17px;
+
+    background-color: #f2f2f2;
+
+    &--first {
+      padding-right: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -45,25 +94,54 @@
 
 .photos__title {
   margin: 0;
-  margin-bottom: 10px;
 
+  font-size: 14px;
+  line-height: 24px;
   font-weight: bold;
   color: #000000;
 }
 
 .photos__author {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .photos__likes {
   margin: 0;
-  margin-bottom: 25px;
 }
 
 .photos__likes-number {
+  position: relative;
+
+  padding-left: 37px;
+
   font-weight: bold;
   color: #000000;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    width: 23px;
+    height: 21px;
+
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: -2px;
+      left: 5px;
+    }
+  }
 }

@@ -41,4 +41,8 @@
     color: #000000;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 239px;
+  }
 }
