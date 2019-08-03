@@ -1,18 +1,24 @@
 .copyright {
   display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    align-items: center;
+    width: 150px;
+    justify-content: flex-end;
   }
 }
 
 .copyright__text {
-  margin-right: 10px;
+  margin-right: 15px;
 
   font-weight: normal;
   color: #000000;
 }
 
 .copyright__link svg {
-  width: 40px;
+  position: relative;
+  top: 4px;
+
+  width: 27px;
+  height: 34px;
 }
