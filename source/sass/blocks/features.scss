@@ -12,7 +12,14 @@
     display: flex;
     justify-content: space-around;
     padding-top: 57px;
-    padding-bottom: 80px;
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 57px;
+    padding-bottom: 82px;
   }
 }
 
