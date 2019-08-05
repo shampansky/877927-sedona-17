@@ -1,7 +1,9 @@
 .features {
+  position: relative;
+
   padding: 0;
   padding-top: 8px;
-  padding-bottom: 55px;
+  padding-bottom: 35px;
 
   list-style: none;
   background-color: #ffffff;
@@ -9,60 +11,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-around;
-    padding-top: 54px;
-    padding-bottom: 61px;
+    padding-top: 57px;
+    padding-bottom: 80px;
   }
 }
 
 .features__item {
   position: relative;
 
-  padding-top: 28px;
-  padding-left: 70px;
-
-  &::before {
-    content: "";
-
-    position: absolute;
-
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: contain;
-  }
-
-  &--souvenirs {
-    order: 1;
-  }
-
-  &--housing::before {
-    left: 21px;
-    top: 18px;
-
-    width: 39px;
-    height: 37px;
-
-    background-image: url("../img/icon-house.svg");
-  }
-
-  &--souvenirs::before {
-    left: 24px;
-    top: 16px;
-
-    width: 32px;
-    height: 38px;
-
-    background-image: url("../img/icon-gift.svg");
-  }
-
-  &--food::before {
-    left: 19px;
-    top: 22px;
-
-    width: 40px;
-    height: 35px;
-
-    background-image: url("../img/icon-burger.svg");
-  }
+  padding: 28px 20px 0 70px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -70,29 +27,15 @@
     align-items: center;
     padding: 0;
     width: 170px;
+  }
 
-    &::before {
-      position: static;
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
 
-      margin-bottom: 26px;
-    }
-
-    &--housing::before {
-      width: 75px;
-      height: 72px;
-      // Правильное ли это решение для выравнивания иконок по нижней границе?
-      margin-top: 3px;
-    }
-
-    &--souvenirs::before {
-      width: 64px;
-      height: 75px;
-    }
-
-    &--food::before {
-      width: 77px;
-      height: 68px;
-      margin-top: 7px;
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      order: 1;
     }
   }
 }
@@ -107,7 +50,7 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 
     font-size: 21px;
   }
@@ -122,5 +65,30 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+  }
+}
+
+.features__icon {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+
+    width: 77px;
+    height: 75px;
+    margin-bottom: 27px;
+  }
+
+  img {
+    max-height: 100%;
   }
 }

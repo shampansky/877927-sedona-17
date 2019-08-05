@@ -8,115 +8,69 @@
 }
 
 .advantages__item {
-  color: #ffffff;
-  background-color: #81b3d2;
+  color: #333333;
 
-  &--city {
-    padding-top: 37px;
-
-    background-image: url("../img/bg-triangle.svg");
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
-
-  &--small {
-    color: #333333;
-
-    background-color: #eeeeee;
-    border-bottom: 1px solid #d7d7d7;
-  }
-
-  &--small br {
-    display: none;
-  }
-
-  &--small .advantages__item-content {
-    padding: 27px 0;
-  }
-
-  &--small .advantages__text {
-    padding: 0 32px;
-  }
-
-  &--small .advantages__number::before {
-    background-color: #333333;
-  }
-
-  &--small .advantages__number::after {
-    background-color: #333333;
-  }
-
-  &--small:last-child {
-    border-bottom: none;
-  }
+  background-color: #eeeeee;
 
   @media (min-width: $tablet-width) {
+    width: 33%;
+    flex-grow: 1;
+  }
+
+  &:last-child .advantages__item-content {
+    border: none;
+  }
+
+  &--full {
     width: 100%;
 
-    &--city {
-      padding-top: 0;
+    color: #ffffff;
 
-      background-image: none;
+    background-color: #81b3d2;
+
+    .advantages__header,
+    .advantages__number {
+      color: #ffffff;
     }
 
-    &--small {
-      width: 33%;
-      flex-grow: 1;
-      border-bottom: none;
-    }
-
-    &--small .advantages__item-content {
-      padding-top: 41px;
-      padding-bottom: 44px;
-    }
-
-    &--small .advantages__text {
-      padding: 0;
-    }
-
-    &--bridge {
-      display: flex;
-      // допустимо ли такое вложение
+    @media (max-width: $tablet-width) {
       .advantages__item-content {
-        order: 1;
+        padding: 40px 0;
+        border: none;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      .advantages__item-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
       }
     }
   }
 
-  @media (min-width: $desktop-width) {
-    &--small br {
-      display: inline;
-    }
-
-    &--small .advantages__item-content {
-      padding-bottom: 66px;
+  &--inverse {
+    @media (min-width: $tablet-width) {
+      .advantages__item-wrapper {
+        flex-direction: row-reverse;
+      }
     }
   }
 }
 
 .advantages__item-content {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 26px 15px 28px;
+  margin: 0 20px;
+
+  border-bottom: 1px solid red;
 
   @media (min-width: $tablet-width) {
-    padding-top: 46px;
+    width: 160px;
+    margin: 0 auto;
+    padding: 45px 0 44px;
 
-    &--small {
-      width: 158px;
-      margin: 0 auto;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--small {
-      width: 270px;
-    }
-  }
-}
-
-.advantages__wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
+    border: none;
   }
 }
 
@@ -131,11 +85,17 @@
   line-height: 26px;
   font-weight: bold;
   text-align: center;
+  color: #000000;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
-
     font-size: 21px;
+    line-height: 26px;
+
+    margin-bottom: 23px;
   }
 }
 
@@ -147,37 +107,33 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  color: #333333;
 
-  &::before {
-    content: "";
-
-    position: absolute;
-    left: -13px;
-    top: 10px;
-
-    width: 10px;
-    height: 2px;
-
-    background-color: #ffffff;
-  }
-
+  &::before,
   &::after {
     content: "";
 
     position: absolute;
-    right: -13px;
     top: 10px;
 
     width: 10px;
     height: 2px;
 
-    background-color: #ffffff;
+    background-color: currentColor;
+  }
+
+  &::before {
+    left: -13px;
+  }
+
+  &::after {
+    right: -13px;
   }
 }
 
 .advantages__text {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
 
   font-size: 14px;
   line-height: 21px;
@@ -186,4 +142,13 @@
 
 .advantages__image {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 512px; // временные стили
+    height: 256px; // временные стили
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px; // временные стили
+  }
 }
