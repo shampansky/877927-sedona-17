@@ -1,4 +1,6 @@
 .photos {
+  padding-top: 10px;
+
   @media (min-width: $tablet-width) {
     padding: 19px $tablet-padding 0;
   }
