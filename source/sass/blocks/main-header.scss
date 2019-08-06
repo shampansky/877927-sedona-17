@@ -3,6 +3,14 @@
 
   padding: 40px 23px 27px;
 
+  @media (min-width: $tablet-width) {
+    padding: 75px 165px 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 112px 380px 51px;
+  }
+
   &--index {
 
     padding: 40px 30px 44px;
@@ -39,6 +47,10 @@
       margin-bottom: 29px;
 
       font-size: 18px;
+
+      @media (min-width: $tablet-width) {
+        font-size: 21px;
+      }
     }
   }
 }
@@ -52,6 +64,12 @@
   font-weight: bold;
   color: #000000;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+  }
 }
 
 .main-header__caption {

@@ -22,6 +22,20 @@
     background-image: url("../img/text-sedona.svg");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      top: 150px;
+
+      width: 458px;
+      height: 78px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 158px;
+
+      width: 458px;
+      height: 78px;
+    }
   }
 
   &::after {
@@ -85,10 +99,12 @@
   background-position: bottom center;
 
   @media (min-width: $tablet-width) {
+    height: 346px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    height: 357px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }

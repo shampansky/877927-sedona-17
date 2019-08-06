@@ -9,6 +9,10 @@
     justify-content: space-between;
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 37px;
+  }
 }
 
 .page-footer__hashtag {
