@@ -1,0 +1,80 @@
+.main-header {
+  position: relative;
+
+  padding: 40px 23px 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 75px 165px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 112px 380px 51px;
+  }
+
+  &--index {
+
+    padding: 40px 30px 44px;
+
+    @media (max-width: $tablet-width) {
+      &::after {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: 37px;
+        margin: 0 auto;
+
+        background-color: #81b3d2;
+        background-image: url("../img/bg-triangle.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 50px 80px 51px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 50px 300px 51px;
+    }
+
+    .main-header__title {
+      margin-bottom: 29px;
+
+      font-size: 18px;
+
+      @media (min-width: $tablet-width) {
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+.main-header__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+  }
+}
+
+.main-header__caption {
+  margin: 0;
+
+  line-height: 24px;
+  text-align: center;
+}
