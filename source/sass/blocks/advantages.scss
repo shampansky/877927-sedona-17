@@ -157,13 +157,4 @@
 
 .advantages__image {
   display: block;
-
-  @media (min-width: $tablet-width) {
-    width: 512px; // временные стили
-    height: 256px; // временные стили
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 800px; // временные стили
-  }
 }
