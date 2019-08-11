@@ -1,17 +1,45 @@
-.page-header {
+.page-header__wrapper {
+  height: 56px;
+}
+
+.page-header__intro {
   position: relative;
 
-  padding-top: 56px;
+  height: 157px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    height: 290px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 302px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   &::before {
     content: "";
 
     position: absolute;
-    top: 107px;
+    top: 52px;
     left: 0;
     right: 0;
 
@@ -24,14 +52,14 @@
     background-size: contain;
 
     @media (min-width: $tablet-width) {
-      top: 150px;
+      top: 95px;
 
       width: 458px;
       height: 78px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 158px;
+      top: 102px;
 
       width: 458px;
       height: 78px;
@@ -66,8 +94,18 @@
   }
 
   &--index {
+    height: 389px;
+
+    @media (min-width: $tablet-width) {
+      height: 518px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 518px;
+    }
+
     &::before {
-      top: 146px;
+      top: 90px;
 
       width: 282px;
       height: 214px;
@@ -75,52 +113,11 @@
       background-image: url("../img/text-sedona-index.svg");
 
       @media (min-width: $tablet-width) {
-        top: 133px;
+        top: 77px;
 
         width: 460px;
         height: 350px;
       }
-    }
-
-    .page-header__wrapper {
-      height: 389px;
-
-      @media (min-width: $tablet-width) {
-        height: 574px;
-      }
-    }
-  }
-}
-
-.page-header__wrapper {
-  height: 157px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom center;
-
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 768px auto;
-  }
-
-  @media (min-width: $tablet-width) {
-    height: 346px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 768px auto;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 357px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 1200px auto;
     }
   }
 }
@@ -130,6 +127,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 
   display: block;
   width: 102px;
