@@ -1,3 +1,27 @@
+.page-header {
+  @media (max-width: $mobile-width-only) {
+    &--nojs .page-header__wrapper {
+      position: relative;
+
+      height: auto;
+      margin-bottom: 56px;
+    }
+
+    &--nojs .main-nav-list {
+      display: block;
+    }
+
+    &--nojs .main-nav__menu-btn {
+      display: none;
+    }
+
+    &--nojs .page-header__logo {
+      top: auto;
+      bottom: -84px;
+    }
+  }
+}
+
 .page-header__wrapper {
   height: 56px;
 }
