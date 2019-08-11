@@ -13,6 +13,18 @@
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
 
+  &--active .main-nav-list__link {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: #d6d0cc;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
 
@@ -31,6 +43,14 @@
   line-height: 40px;
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
 
   @media (min-width: $tablet-width) {
     width: 153px;
