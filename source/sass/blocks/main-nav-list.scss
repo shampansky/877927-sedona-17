@@ -31,6 +31,7 @@
   line-height: 40px;
   color: #ffffff;
   text-decoration: none;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 153px;
@@ -44,5 +45,25 @@
 
   @media (min-width: $desktop-width) {
     width: 239px;
+  }
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
+
+  &--active {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: #d6d0cc;
+    }
   }
 }
