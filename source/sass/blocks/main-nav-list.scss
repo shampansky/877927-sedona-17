@@ -13,17 +13,7 @@
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
 
-  &--active .main-nav-list__link {
-    color: #766357;
-
-    &:hover {
-      color: #604e43;
-    }
-
-    &:active {
-      color: #d6d0cc;
-    }
-  }
+  
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -45,14 +35,6 @@
   text-decoration: none;
   text-align: center;
 
-  &:hover {
-    color: #81b3d2;
-  }
-
-  &:active {
-    color: #cacaca;
-  }
-
   @media (min-width: $tablet-width) {
     width: 153px;
     padding: 15px 0;
@@ -65,5 +47,25 @@
 
   @media (min-width: $desktop-width) {
     width: 239px;
+  }
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
+
+  &--active {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: #d6d0cc;
+    }
   }
 }

@@ -1,6 +1,6 @@
-.main-nav {
+.main-nav--opened {
   @media (max-width: $mobile-width-only) {
-    &--opened .main-nav-list {
+    .main-nav-list {
       position: absolute;
       left: 0;
       top: 0;
@@ -10,7 +10,7 @@
       width: 100%;
     }
 
-    &--opened .main-nav__menu-btn {
+    .main-nav__menu-btn {
       z-index: 30;
 
       background-image: url("../img/icon-cross.svg");
