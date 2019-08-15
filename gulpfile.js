@@ -1,5 +1,4 @@
 "use strict";
-// комментарий, чтобы доавить пуллреквест с изменением в интерфейс
 
 var gulp = require("gulp");
 var posthtml = require("gulp-posthtml");
