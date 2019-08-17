@@ -34,24 +34,25 @@ var onButtonClick = function () {
 
 var showMessage = function (message) {
   message.classList.add('modal--show');
-  console.log(message);
   modalButton = message.querySelector('.modal__button');
-  console.log(modalButton);
   modalButton.addEventListener('click', onButtonClick);
 }
 
-formSubmitButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  var errors = false;
-  
-  for (var i = 0; i < formInputs.length; i++) {
-    var input = formInputs[i];
-    if (!input.checkValidity()) {
-      errors = true;
-      break;
+if (formSubmitButton) {
+  formSubmitButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    var errors = false;
+    
+    for (var i = 0; i < formInputs.length; i++) {
+      var input = formInputs[i];
+      if (!input.checkValidity()) {
+        errors = true;
+        break;
+      }
     }
-  }
+  
+    errors ? showMessage(modalError) : showMessage(modalSuccess);
+  });
+}
 
-  errors ? showMessage(modalError) : showMessage(modalSuccess);
-});
 
