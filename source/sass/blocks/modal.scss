@@ -72,6 +72,10 @@
       }
     }
   }
+
+  &--show {
+    display: block;
+  }
 }
 
 .modal__header {
