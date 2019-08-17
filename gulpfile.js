@@ -6,6 +6,7 @@ var include = require("posthtml-include");
 var imagemin = require("gulp-imagemin");
 var uglify = require("gulp-uglify");
 var pipeline = require("readable-stream").pipeline;
+var htmlmin = require('gulp-htmlmin');
 var webp = require("gulp-webp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
@@ -36,6 +37,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
