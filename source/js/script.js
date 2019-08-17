@@ -42,7 +42,6 @@ if (formSubmitButton) {
   formSubmitButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     var errors = false;
-    
     for (var i = 0; i < formInputs.length; i++) {
       var input = formInputs[i];
       if (!input.checkValidity()) {
@@ -50,9 +49,6 @@ if (formSubmitButton) {
         break;
       }
     }
-  
     errors ? showMessage(modalError) : showMessage(modalSuccess);
   });
 }
-
-
