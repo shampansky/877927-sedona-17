@@ -279,6 +279,10 @@
       width: 100%;
       height: 160px;
       padding: 16px 20px;
+
+      &:focus {
+        padding-top: 12px;
+      }
     }
   }
 }
@@ -349,6 +353,11 @@
 }
 
 .review__field {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+
   height: 58px;
 
   border: none;
@@ -372,6 +381,7 @@
   }
 
   &:focus {
+    padding: 6px 16px;
     background-color: #ffffff;
     border: 4px solid #e5e5e5;
   }
