@@ -15,7 +15,7 @@
 
     padding: 40px 30px 44px;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $mobile-width-only) {
       &::after {
         content: "";
 
