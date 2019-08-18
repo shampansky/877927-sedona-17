@@ -49,92 +49,91 @@
           <p class="main-header__caption">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
-          <form class="review" action="https://echo.htmlacademy.ru" method="post">
-              <div class="review__item review__item--name">
-                <h2 class="review__title">Представьтесь:</h2>
-                <div class="review__field-group">
-                  <label class="review__label" for="first-name">Имя*:</label>
-                  <input class="review__field review__field--text" id="first-name" type="text" name="first-name" placeholder="Петр" required>
-                </div>
-                <div class="review__field-group">
-                  <label class="review__label" for="last-name">Фамилия*:</label>
-                  <input class="review__field review__field--text" id="last-name" type="text" name="last-name" placeholder="Иванов" required>
-                </div>
-                <div class="review__field-group">
-                  <label class="review__label" for="patronymic">Отчество:</label>
-                  <input class="review__field review__field--text" id="patronymic" type="text" name="patronymic" placeholder="Александрович" required>
-                </div>
-              </div>
+        <form class="review" action="https://echo.htmlacademy.ru" method="post">
+          <div class="review__item review__item--name">
+            <h2 class="review__title">Представьтесь:</h2>
+            <div class="review__field-group">
+              <label class="review__label" for="first-name">Имя*:</label>
+              <input class="review__field review__field--text" id="first-name" type="text" name="first-name" placeholder="Петр" required>
+            </div>
+            <div class="review__field-group">
+              <label class="review__label" for="last-name">Фамилия*:</label>
+              <input class="review__field review__field--text" id="last-name" type="text" name="last-name" placeholder="Иванов" required>
+            </div>
+            <div class="review__field-group">
+              <label class="review__label" for="patronymic">Отчество:</label>
+              <input class="review__field review__field--text" id="patronymic" type="text" name="patronymic" placeholder="Александрович" required>
+            </div>
+          </div>
 
-              <div class="review__item review__item--contact">
-                <h2 class="review__title review__title--borders">Контактная информация:</h2>
-                <div class="review__fields-wrapper">
-                  <div class="review__field-group">
-                    <label class="review__label" for="phone"><span class="review__phone-text">Контактный</span> телефон*</label>
-                    <div class="review__input-wrapper review__input-wrapper--phone">
-                      <input class="review__field review__field--text" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
-                    </div>
-                  </div>
-                  <div class="review__field-group">
-                    <label class="review__label" for="email">Электронная почта*</label>
-                    <div class="review__input-wrapper review__input-wrapper--email">
-                      <input class="review__field review__field--text" id="email" type="email" name="email" placeholder="Введите e-mail" required>
-                    </div>
-                  </div>
+          <div class="review__item review__item--contact">
+            <h2 class="review__title review__title--borders">Контактная информация:</h2>
+            <div class="review__fields-wrapper">
+              <div class="review__field-group">
+                <label class="review__label" for="phone"><span class="review__phone-text">Контактный</span> телефон*</label>
+                <div class="review__input-wrapper review__input-wrapper--phone">
+                  <input class="review__field review__field--text" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
                 </div>
               </div>
+              <div class="review__field-group">
+                <label class="review__label" for="email">Электронная почта*</label>
+                <div class="review__input-wrapper review__input-wrapper--email">
+                  <input class="review__field review__field--text" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                </div>
+              </div>
+            </div>
+          </div>
 
-              <div class="review__item review__item--impression">
-                <h2 class="review__title">Ваше общее впечатление:</h2>
-                <div class="review__field-group">
-                  <input class="review__radio visually-hidden" id="impression-positive" type="radio" name="impression" value="positive" checked>
-                  <label class="review__label review__label--bold" for="impression-positive">Скорее положительное</label>
-                </div>
-                <div class="review__field-group">
-                  <input class="review__radio visually-hidden" id="impression-negative" type="radio" name="impression" value="negative">
-                  <label class="review__label review__label--bold" for="impression-negative">Скорее отрицательное</label>
-                </div>
-                <div class="review__field-group">
-                  <input class="review__radio visually-hidden" id="impression-neutral" type="radio" name="impression" value="neutral">
-                  <label class="review__label review__label--bold" for="impression-neutral">Затрудняюсь ответить</label>
-                </div>
-              </div>
+          <div class="review__item review__item--impression">
+            <h2 class="review__title">Ваше общее впечатление:</h2>
+            <div class="review__field-group">
+              <input class="review__radio visually-hidden" id="impression-positive" type="radio" name="impression" value="positive" checked>
+              <label class="review__label review__label--bold" for="impression-positive">Скорее положительное</label>
+            </div>
+            <div class="review__field-group">
+              <input class="review__radio visually-hidden" id="impression-negative" type="radio" name="impression" value="negative">
+              <label class="review__label review__label--bold" for="impression-negative">Скорее отрицательное</label>
+            </div>
+            <div class="review__field-group">
+              <input class="review__radio visually-hidden" id="impression-neutral" type="radio" name="impression" value="neutral">
+              <label class="review__label review__label--bold" for="impression-neutral">Затрудняюсь ответить</label>
+            </div>
+          </div>
 
-              <div class="review__item review__item--sights">
-                <h2 class="review__title review__title--borders">Посещенные<br> достопримечательности:</h2>
-                <div class="review__fields-wrapper">
-                  <div class="review__field-group">
-                    <input class="review__checkbox visually-hidden" id="devils-bridge" type="checkbox" name="sight-devils-bridge" checked>
-                    <label class="review__label review__label--bold" for="devils-bridge">Мост Дьявола</label>
-                  </div>
-                  <div class="review__field-group">
-                    <input class="review__checkbox visually-hidden" id="bell-rock" type="checkbox" name="sight-bell-rock" checked>
-                    <label class="review__label review__label--bold" for="bell-rock">Гора-Колокол</label>
-                  </div>
-                  <div class="review__field-group">
-                    <input class="review__checkbox visually-hidden" id="slide-park" type="checkbox" name="sight-slide-park" checked>
-                    <label class="review__label review__label--bold" for="slide-park">Слайд-парк</label>
-                  </div>
-                  <div class="review__field-group">
-                    <input class="review__checkbox visually-hidden" id="red-rock" type="checkbox" name="sight-red-rock">
-                    <label class="review__label review__label--bold" for="red-rock">Красные горы</label>
-                  </div>
-                </div>
+          <div class="review__item review__item--sights">
+            <h2 class="review__title review__title--borders">Посещенные<br> достопримечательности:</h2>
+            <div class="review__fields-wrapper">
+              <div class="review__field-group">
+                <input class="review__checkbox visually-hidden" id="devils-bridge" type="checkbox" name="sight-devils-bridge" checked>
+                <label class="review__label review__label--bold" for="devils-bridge">Мост Дьявола</label>
               </div>
+              <div class="review__field-group">
+                <input class="review__checkbox visually-hidden" id="bell-rock" type="checkbox" name="sight-bell-rock" checked>
+                <label class="review__label review__label--bold" for="bell-rock">Гора-Колокол</label>
+              </div>
+              <div class="review__field-group">
+                <input class="review__checkbox visually-hidden" id="slide-park" type="checkbox" name="sight-slide-park" checked>
+                <label class="review__label review__label--bold" for="slide-park">Слайд-парк</label>
+              </div>
+              <div class="review__field-group">
+                <input class="review__checkbox visually-hidden" id="red-rock" type="checkbox" name="sight-red-rock">
+                <label class="review__label review__label--bold" for="red-rock">Красные горы</label>
+              </div>
+            </div>
+          </div>
 
-              <div class="review__item review__item--emotions">
-                <h2 class="review__title review__title--borders">Опишите свои эмоции:</h2>
-                <div class="review__field-group">
-                  <label class="visually-hidden" for="emotions">Впечатления от поездки</label>
-                  <textarea class="review__field review__field--textarea" name="emotions" id="emotions" rows="5" cols="80" placeholder="Опишите подробно все свои восторги"></textarea>
-                </div>
-              </div>
-              <div class="review__submit-wrapper">
-                <input class="review__submit button" type="submit" value="Отправить отзыв">
-                <p class="review__submit-caption">* - обязательные поля</p>
-              </div>
-          </form>
-
+          <div class="review__item review__item--emotions">
+            <h2 class="review__title review__title--borders">Опишите свои эмоции:</h2>
+            <div class="review__field-group">
+              <label class="visually-hidden" for="emotions">Впечатления от поездки</label>
+              <textarea class="review__field review__field--textarea" name="emotions" id="emotions" rows="5" cols="80" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+          </div>
+          <div class="review__submit-wrapper">
+            <input class="review__submit button" type="submit" value="Отправить отзыв">
+            <p class="review__submit-caption">* - обязательные поля</p>
+          </div>
+        </form>
       </main>
 
       <footer class="page-footer">
@@ -145,7 +144,7 @@
               <a href="#" class="social__link social__link--twitter">
                 <span class="visually-hidden">Мы в Twitter</span>
                 <svg width="18" height="15">
-                    <use xlink:href="#icon-twitter"></use>
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -153,7 +152,7 @@
               <a href="#" class="social__link social__link--facebook">
                 <span class="visually-hidden">Мы в Facebook</span>
                 <svg width="9" height="19">
-                    <use xlink:href="#icon-facebook"></use>
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -161,7 +160,7 @@
               <a href="#" class="social__link social__link--youtube">
                 <span class="visually-hidden">Мы в Youtube</span>
                 <svg width="20" height="14">
-                    <use xlink:href="#icon-youtube"></use>
+                  <use xlink:href="#icon-youtube"></use>
                 </svg>
               </a>
             </li>
@@ -171,7 +170,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="visually-hidden">HTML Academy</span>
               <svg width="27" height="34">
-                  <use xlink:href="#icon-htmlacademy"></use>
+                <use xlink:href="#icon-htmlacademy"></use>
               </svg>
             </a>
           </div>
