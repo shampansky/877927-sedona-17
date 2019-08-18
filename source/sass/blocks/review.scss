@@ -278,7 +278,8 @@
     .review__field {
       width: 100%;
       height: 160px;
-      padding: 16px 20px;
+      padding: 12px 20px;
+      resize: vertical;
 
       &:focus {
         padding-top: 12px;
@@ -355,18 +356,14 @@
 .review__field {
   font-weight: bold;
   font-size: 18px;
-  line-height: 26px;
   color: #000000;
 
   height: 58px;
 
-  border: none;
+  border: 4px solid transparent;
   background-color: #f2f2f2;
 
   &::placeholder {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
     color: #000000;
     text-transform: none;
   }
@@ -381,7 +378,6 @@
   }
 
   &:focus {
-    padding: 6px 16px;
     background-color: #ffffff;
     border: 4px solid #e5e5e5;
   }
