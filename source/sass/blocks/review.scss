@@ -42,13 +42,18 @@
         margin-bottom: 73px;
         text-align: left;
       }
+
+      @media (min-width: $desktop-width) {
+        margin-left: 80px;
+      }
     }
 
     .review__label {
+      display: block;
       padding-left: 79px;
 
       @media (min-width: $tablet-width) {
-        padding-left: 76px;
+        padding-left: 80px;
       }
     }
 
