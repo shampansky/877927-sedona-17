@@ -377,6 +377,16 @@
   &--text {
     min-width: 160px;
     padding: 10px 20px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--textarea {
+    &:focus {
+      outline: none;
+    }
   }
 
   &:hover {
@@ -424,7 +434,8 @@
     }
   }
 
-  &:hover + .review__label {
+  &:hover + .review__label,
+  &:focus + .review__label {
     &::before {
       background-color: #e5e5e5;
     }
@@ -486,7 +497,8 @@
     }
   }
 
-  &:hover + .review__label {
+  &:hover + .review__label,
+  &:focus + .review__label {
     &::before {
       background-color: #e5e5e5;
     }

@@ -21,8 +21,10 @@
 
   background-color: #81b3d2;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #669ec0;
+    outline: none;
   }
 
   &:active {

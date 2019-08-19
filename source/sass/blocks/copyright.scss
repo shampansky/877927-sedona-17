@@ -15,6 +15,16 @@
   color: #000000;
 }
 
+.copyright__link {
+  &:focus {
+    outline: none;
+
+    svg {
+      fill: #81b3d2;
+    }
+  }
+}
+
 .copyright__link svg {
   position: relative;
   top: 4px;
