@@ -5,6 +5,7 @@
   margin: 0 auto;
 
   background: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -12,7 +13,5 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   }
 }
