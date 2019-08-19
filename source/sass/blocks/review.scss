@@ -447,17 +447,7 @@
     }
 
     &::after {
-      content: "";
-
-      position: absolute;
-      top: 2px;
-      left: 17px;
-
-      width: 22px;
-      height: 22px;
-
-      background-color: #a4a4a4;
-      border-radius: 50%;
+      opacity: 0.3;
     }
   }
 }
@@ -510,17 +500,6 @@
     }
 
     &::after {
-      content: "";
-
-      position: absolute;
-      top: 5px;
-      left: 17px;
-
-      width: 24px;
-      height: 16px;
-
-      background-image: url("../img/icon-tick.svg");
-      background-repeat: no-repeat;
       opacity: 0.3;
     }
   }
