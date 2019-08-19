@@ -63,7 +63,12 @@
   }
 }
 
+.booking__map-image {
+  display: block;
+}
+
 .booking__map {
+  display: none;
   width: 100%;
   height: 350px;
 
