@@ -54,5 +54,7 @@ if (formSubmitButton) {
 
 var elBookingMapImage = document.querySelector('.booking__map-image');
 var elBookingMapFrame = document.querySelector('.booking__map');
-elBookingMapImage.style.display = "none";
-elBookingMapFrame.style.display = "block";
+if (elBookingMapImage && elBookingMapFrame) {
+  elBookingMapImage.style.display = "none";
+  elBookingMapFrame.style.display = "block";
+}
