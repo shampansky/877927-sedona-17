@@ -22,6 +22,32 @@
   }
 }
 
+.page-header--opened {
+  @media (max-width: $mobile-width-only) {
+    .page-header__wrapper {
+      position: relative;
+
+      height: auto;
+      margin-bottom: 56px;
+    }
+
+    .main-nav-list {
+      display: block;
+    }
+
+    .page-header__logo {
+      top: auto;
+      bottom: -84px;
+    }
+
+    .main-nav__menu-btn {
+      z-index: 30;
+
+      background-image: url("../img/icon-cross.svg");
+    }
+  }
+}
+
 .page-header__wrapper {
   height: 56px;
 }
