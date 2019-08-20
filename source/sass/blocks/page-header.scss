@@ -94,8 +94,8 @@
     left: 0;
     right: 0;
 
-    width: 229px;
-    height: 39px;
+    width: 230px;
+    height: 40px;
     margin: 0 auto;
 
     background-image: url("../img/text-sedona.svg");
@@ -105,15 +105,12 @@
     @media (min-width: $tablet-width) {
       top: 95px;
 
-      width: 458px;
-      height: 78px;
+      width: 460px;
+      height: 80px;
     }
 
     @media (min-width: $desktop-width) {
       top: 102px;
-
-      width: 458px;
-      height: 78px;
     }
   }
 
