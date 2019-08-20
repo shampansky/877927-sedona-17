@@ -158,6 +158,14 @@
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+
+  br {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
 }
 
 .advantages__image {
