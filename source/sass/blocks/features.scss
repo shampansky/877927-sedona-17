@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
-    width: 170px;
+    width: 165px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,6 +71,14 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+
+  br {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     text-align: center;
