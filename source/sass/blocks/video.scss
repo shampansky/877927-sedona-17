@@ -16,9 +16,9 @@
 }
 
 .video__title {
-  margin: 0;
-  margin-bottom: 25px;
-  padding: 0 30px;
+  margin: 0 auto 25px;
+  padding: 0;
+  width: 260px;
 
   font-size: 18px;
   line-height: 26px;
@@ -28,28 +28,27 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
+    width: 440px;
 
     font-size: 30px;
   }
 }
 
 .video__text {
-  margin: 0;
-  margin-bottom: 35px;
-  padding: 0 30px;
+  margin: 0 auto 35px;
+  padding: 0;
+  width: 260px;
 
   font-size: 14px;
   line-height: 24px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 0 165px;
-
+    width: 440px;
     margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 380px;
     margin-bottom: 72px;
   }
 }
